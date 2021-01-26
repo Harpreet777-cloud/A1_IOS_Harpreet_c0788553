@@ -1,24 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LabAssignment1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nMX-fZ-hGB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="848"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="tWw-2j-ukA"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLg-me-MaQ">
+                                <rect key="frame" x="268" y="708" width="107" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1vc-uH-iBz"/>
+                                    <constraint firstAttribute="height" constant="100" id="zWa-du-iaq"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="location-arrow"/>
+                                <connections>
+                                    <action selector="drawRoute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wvk-Kf-Ajz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nMX-fZ-hGB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="7qR-j6-GMq"/>
+                            <constraint firstItem="nMX-fZ-hGB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="9bR-bg-V8u"/>
+                            <constraint firstItem="nMX-fZ-hGB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Hnh-9m-caC"/>
+                            <constraint firstItem="GLg-me-MaQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="304" id="MAK-n8-PIG"/>
+                            <constraint firstItem="nMX-fZ-hGB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MLC-mG-VD1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nMX-fZ-hGB" secondAttribute="bottom" id="PvL-aK-n3m"/>
+                            <constraint firstItem="nMX-fZ-hGB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dww-ct-PKH"/>
+                            <constraint firstAttribute="trailing" secondItem="GLg-me-MaQ" secondAttribute="trailing" constant="10" id="f86-OU-rpW"/>
+                            <constraint firstItem="nMX-fZ-hGB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hac-dW-3Yq"/>
+                            <constraint firstAttribute="bottom" secondItem="GLg-me-MaQ" secondAttribute="bottom" constant="10" id="rWx-RL-ke1"/>
+                            <constraint firstItem="GLg-me-MaQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="708" id="rs5-iz-KUg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nMX-fZ-hGB" secondAttribute="trailing" id="uc8-tQ-SjV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="directionBtn" destination="GLg-me-MaQ" id="CR1-Ry-cVj"/>
+                        <outlet property="mapView" destination="nMX-fZ-hGB" id="yr4-iP-maT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1759.3457943925232" y="-4543.4125269978404"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="location-arrow" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

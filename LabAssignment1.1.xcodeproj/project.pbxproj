@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B64492C025C01FFC009DECA6 /* Places.plist in Resources */ = {isa = PBXBuildFile; fileRef = B64492BF25C01FFC009DECA6 /* Places.plist */; };
+		B64492C325C02006009DECA6 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64492C225C02006009DECA6 /* Place.swift */; };
 		B6A2CA6825BF407100B47DAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2CA6725BF407100B47DAD /* AppDelegate.swift */; };
 		B6A2CA6A25BF407100B47DAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2CA6925BF407100B47DAD /* SceneDelegate.swift */; };
 		B6A2CA6C25BF407100B47DAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2CA6B25BF407100B47DAD /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B64492BF25C01FFC009DECA6 /* Places.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Places.plist; sourceTree = "<group>"; };
+		B64492C225C02006009DECA6 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		B6A2CA6425BF407100B47DAD /* LabAssignment1.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LabAssignment1.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A2CA6725BF407100B47DAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6A2CA6925BF407100B47DAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +66,9 @@
 				B6A2CA6D25BF407100B47DAD /* Main.storyboard */,
 				B6A2CA7025BF407200B47DAD /* Assets.xcassets */,
 				B6A2CA7225BF407200B47DAD /* LaunchScreen.storyboard */,
+				B64492BF25C01FFC009DECA6 /* Places.plist */,
 				B6A2CA7525BF407200B47DAD /* Info.plist */,
+				B64492C225C02006009DECA6 /* Place.swift */,
 			);
 			path = LabAssignment1.1;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			files = (
 				B6A2CA7425BF407200B47DAD /* LaunchScreen.storyboard in Resources */,
 				B6A2CA7125BF407200B47DAD /* Assets.xcassets in Resources */,
+				B64492C025C01FFC009DECA6 /* Places.plist in Resources */,
 				B6A2CA6F25BF407100B47DAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 				B6A2CA6C25BF407100B47DAD /* ViewController.swift in Sources */,
 				B6A2CA6825BF407100B47DAD /* AppDelegate.swift in Sources */,
 				B6A2CA6A25BF407100B47DAD /* SceneDelegate.swift in Sources */,
+				B64492C325C02006009DECA6 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
